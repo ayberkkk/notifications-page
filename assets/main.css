@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Inter:wght@100;200;300;400;500;800&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,600&family=Nunito:wght@200;300;500;700;800&family=Overpass:wght@400;700&family=Patrick+Hand&family=Plus+Jakarta+Sans:wght@500;800&family=Source+Sans+Pro:wght@300;400;600;700&family=Space+Grotesk:wght@500&display=swap");
+* {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: hsl(210deg, 60%, 98%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+.container {
+  margin: 2rem;
+  width: 700px;
+  background-color: #fff;
+  padding: 1.5rem 1rem;
+  border-radius: 0.5rem;
+}
+.container header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.container header .notification-box {
+  display: flex;
+  align-items: center;
+}
+.container header .notification-box #notifications {
+  background-color: #0a317b;
+  margin-left: 0.5rem;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  color: #fff;
+  font-weight: 800;
+  border-radius: 0.5rem;
+}
+.container p {
+  color: hsl(219deg, 12%, 42%);
+}
+.container main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.container #mark-all {
+  cursor: pointer;
+}
+.container #mark-all:hover {
+  color: #0a317b;
+}
+.container .notif-card {
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.container .notif-card img {
+  width: 50px;
+}
+.container .notif-card .desc {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container .notif-card strong {
+  color: hsl(224deg, 21%, 14%);
+  cursor: pointer;
+}
+.container .notif-card strong:hover {
+  color: #0a317b;
+}
+.container .notif-card .chess-img {
+  margin-left: auto;
+}
+.container .message-card {
+  display: flex;
+  align-items: center;
+}
+.container .message {
+  padding: 1rem;
+  border: 1px solid hsl(205deg, 33%, 90%);
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin: 0 0 0 5rem;
+}
+.container .message:hover {
+  background-color: hsl(211deg, 68%, 94%);
+}
+.container .unread {
+  background-color: hsl(211deg, 68%, 94%);
+}
+.container .unread p:first-of-type::after {
+  content: "";
+  background-color: #f65351;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    margin: 0;
+  }
+}/*# sourceMappingURL=main.css.map */
